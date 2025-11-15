@@ -28,7 +28,7 @@ export const generateCalendarGrid = (selectedDate: Date): CalendarGrid => {
   const month = selectedDate.getMonth();
   
   const firstDayOfMonth = new Date(year, month, 1);
-  const lastDayOfMonth = new Date(year, month, getDaysInMonth(year, month));
+  // const lastDayOfMonth = new Date(year, month, getDaysInMonth(year, month));
   
   const startDay = firstDayOfMonth.getDay() as DayOfWeek;
   const daysInMonth = getDaysInMonth(year, month);
